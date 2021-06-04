@@ -35,7 +35,7 @@ def imputproblema(update, context):
         return STATE1
 
       
-def problema(update, context):
+def Feedback(update, context):
     try:
         message = 'Por favor, digite um feedback sobre Francis Tec para nos:'
         update.message.reply_text(message, reply_markup=ReplyKeyboardMarkup([], one_time_keyboard=True)) 
