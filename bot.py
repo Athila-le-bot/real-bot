@@ -26,18 +26,15 @@ def problema(update, context):
 
 
 def imputproblema(update, context):
-    feedback = update.message.text
-    print(feedback)
-    if len(feedback) == ('3CX não conecta') or ('3CX não bipa') or ('3CX desconfigurado') or ('configurar 3CX') or ('INSTALAR SOFTPHONE'):
+    problema = update.message.text
+    print(problema)
+    if len(problema) == ('3CX não conecta') or ('3CX não bipa') or ('3CX desconfigurado') or ('configurar 3CX') or ('INSTALAR SOFTPHONE'):
         message = """verifique se o softphone 3CX ja esta instalado
         \n se ja estiver configure usando este documento file:///C:/Users/Athila/Downloads/POP%20DE%20INSTALA%C3%87%C3%83O%20-%203CX.pdf"""
         context.bot.send_message(chat_id=update.effective_chat.id, text=message)
         return STATE1
-    else:
-        message = "Muito obrigado pelo seu feedback!"
-        context.bot.send_message(chat_id=update.effective_chat.id, text=message)
-        return ConversationHandler.END
 
+      
 def feedback(update, context):
     try:
         message = 'Por favor, digite um feedback sobre Francis Tec para nos:'
