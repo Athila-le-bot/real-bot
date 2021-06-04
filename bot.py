@@ -1,6 +1,6 @@
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,
                           RegexHandler, ConversationHandler, CallbackQueryHandler)
-from telegram.ext import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup 
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup 
 
 STATE1 = 1
 STATE2 = 2
